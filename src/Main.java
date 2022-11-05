@@ -54,15 +54,15 @@ public class Main {
 //-------------------------------------If all false--------------------------------------------
 
         Scanner inputName = new Scanner(System.in);
-        Scanner inputHeight = new Scanner(System.in);
+        Scanner inputHeight = new Scanner(System.in); //is it necessary to create the second scanner?
         String name;
         int height;
         System.out.println("Hello! Let's find out your best weigh!");
         System.out.println("What's your name?");
 
 
-        if (true) {
-            if (!inputName.hasNextInt()) {
+        if (true) { //it's always true
+            if (!inputName.hasNextInt()) { //add other data types
                 name = inputName.nextLine();
                 System.out.println("Nice to meet you, " + name + " What's your height?");
                 if (inputHeight.hasNextInt()) {
@@ -73,9 +73,9 @@ public class Main {
                 }
             } else {
                 System.out.println("That's not a name, but ok, I'll call you dummy))");
-                System.out.println("Nice to meet you, Dummy. What's your height?");
+                System.out.println("Nice to meet you, Dummy. What's your height?"); //the same logic as in line 67
                 height = inputHeight.nextInt();
-                System.out.println("So, dummy . Your best weight is " + (height - 100));
+                System.out.println("So, dummy . Your best weight is " + (height - 100)); //the same logic as in line 70
             }
         }
 
